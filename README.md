@@ -1,2 +1,2 @@
 # 100days_code_challenge
-coding for consective 100days and learning new concepts regularly.
+coding for consecutive 100days and learning new Dsa concepts regularly.
