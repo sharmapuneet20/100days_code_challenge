@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey form</h1>
+            <p id="description"> Thank you for taking the time to fill this form </p>
+        </header>
+        <form  method ="post" id="survey-form">
+            <div class="form-group ">
+                <label for="first-name" id="name-label">Name <input type="text" required id="name"
+                        placeholder="Enter your name" /></label>
+            </div>
+            <div class="form-group">
+                <label for="email-id" id="email-label"> Email <input id="email" required
+                        placeholder="Enter your email-id" type="email" name="email"></label>
+            </div>
+
+            <div> <label for="age" id="number-label"> Age <input type="number" required min="12" max="100" name="age"
+                        placeholder="age" id="number"> </label>
+            </div>
+
+            <div>
+                <p> Which option describes your current role ? </p>
+                <select id="dropdown">
+                    <option disabled> Select your current role </option>
+                    <option> Self-employed </option>
+                    <option> Student </option>
+                    <option> job </option>
+                    <option> Prefer not to say </option>
+                    <option> other </option>
+                </select>
+            </div>
+
+            <div>
+                <p> Would you recommend this survey to your friends? </p>
+                <label> <input name="A" type="radio" checked value="Definitely"> Definitely</label>
+            </div>
+            <div> <label> <input name="A" type="radio" value="maybe">
+                    maybe </label> </div>
+            <div> <label> <input name="A" type="radio" value="Not sure"> Not sure</label> </div>
+            <label>
+                <div>
+                    <p> languages you know ? </p>
+
+                    <div><label> <input type="checkbox" value="java"> java </label> </div>
+                    <div><label> <input type="checkbox" value="python"> python </label> </div>
+                    <div><label> <input type="checkbox" value="cpp"> cpp </label> </div>
+
+
+
+                </div>
+                <p> your suggestions ?</p>
+                <textarea rows="3" cols="30">Enter your comments here....</textarea>
+            </label>
+            <button id="submit" type="submit">Submit</button>
+    </div>
+
+    </form>
+    </div>
+</body>
